@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Roleta de Perguntas - Feira de Ciências</title>
+  
+</head>
+<body>
+    <div class="container">
+        <h1>Roleta de Perguntas</h1>
+        <p class="description">Gire a roleta para testar seus conhecimentos em lógica e tecnologia!</p>
+        
+        <div class="roulette-container">
+            <div class="roulette-pointer"></div>
+            <div class="roulette-wheel" id="roulette-wheel">
+                <!-- Os números serão adicionados via JavaScript -->
+            </div>
+            <div class="roulette-center"></div>
+        </div>
+        
+        <div class="buttons-container">
+            <button class="spin-btn" id="spin-btn">Girar Roleta</button>
+            <button class="reset-btn" id="reset-btn">Reiniciar Jogo</button>
+        </div>
+        
+        <div class="result-container" id="result-container">
+            <p>Acertos: <span id="correct-count">0</span> de <span id="total-count">0</span></p>
+        </div>
+    </div>
+    
+    <div class="modal" id="question-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            
+            <div class="question-header">
+                <h2 class="question-title">Pergunta</h2>
+                <div class="timer-container">
+                    <span>Tempo restante:</span>
+                    <span class="timer" id="timer">30s</span>
+                </div>
+            </div>
+            
+            <p class="question-text" id="question-text"></p>
+            
+            <div class="options-container" id="options-container">
+                <!-- As opções serão adicionadas via JavaScript -->
+            </div>
+            
+            <div class="feedback" id="feedback"></div>
+            
+            <button class="next-btn" id="next-btn">Próxima Pergunta</button>
+        </div>
+    </div>
+
+    <script src="style.css"></script>
+</body>
+</html>
